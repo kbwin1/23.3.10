@@ -1,0 +1,22 @@
+body{
+    background-color: aquamarine;
+}
+h1,h2,h3{
+    text-align: center;
+    padding: 10px;
+}
+button{
+    background-color: aqua;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px burlywood;
+    margin: 10px;
+}
+div{
+    text-align: center;
+    justify-content: center;
+    padding: 1px;
+}
+input{
+    
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+    <form method="POST" action="/q/0" >
+    <h1>{{title}}</h1>
+    <h2>{{instructions}}</h2>
+    <h3>{{question}}</h3>
+    <div>
+        {% for choice in choices %}
+        {{choice}}<input type="radio" class="answers" value='question {{count}} = {{choice}}' required name="answer">
+        {% endfor %}
+        <button>Submit</button>
+    </form>
+    <form action="/back">
+        <button>Back</button>
+    </form>
+    <form action="/reset">
+        <button>Restart</button>
+    </form>
+    </div>
+        {{dis}}
+    
+
+</body>
+</html>
